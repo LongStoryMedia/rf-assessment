@@ -41,14 +41,36 @@ Visit our public site at https://rightfoot.com.
 What is an appropriate use of the ECMAScript keywords var, let, and const. Explain why you
 might or might not use each, and why they provide the desired behavior. Examples are
 welcome but not required.
-''
+
+#### var
+
+`var` is the original. It was once the *only* keyword to declare a variable. `let` and `const` were introduced to alleviate some unwanted behavior such as "variable hoisting" (where, when interpreted, the variable would effectively be "hoisted" to the top of its scope), and mutability (`var` can be re-assigned).
+
+#### let
+
+`let` can be re-assigned, but is not hoisted.
+
+#### const
+
+`const` cannot be re-assigned and is not hoisted. It is typically preferred where possible.
 
 ### Improvements to Your Preferred Language
+
 What are 3 nuances, missing features, or personal anti-patterns in your preferred language
 (selected from TypeScript, Python, Go, Java, or C++)? Explain why they are undesirable.
 Explain your understanding of why your preferred language behaves the way it currently
 does and has not, or will not, implement your desired change.
-''
+
+
+#### NodeJS (Typescript)
+
+As far as programming languages go, javaScript is among the most nuanced in my opinion. It generally boils down to the fact that it is not an object oriented language, and yet it is commonly treated as such. I've heard it explained that it is a 'functional' language, but I don't think thats a characteristic of the language itself so much as the style one could use in writing it. It is a *prototypal* language. It creates objects like other languages, but it does so *implicitely* - which means the actual object one is working with can be obscured if one is not careful. Funcions are objects in the same way a POJO (`{}`) is an object and `this` is inherited in different ways depending on the rules of the object and scope you are in. For example, if an object has a property whos value is an "arrow function" (`() => {}`), that arrow function will inherit the `this` of its parent by default. Wheras a traditional function expression has its own `this`. To further complicate this (no pun intended), the function or object often doesn't have control over its own `this` because that is determined by the *calling function*. To translate what that means into terms applicable to an object oriented language, we can say `this` is determined by how and where a function is *instantiated*. 
+
+Another nuance (and this is mostly related to client-side code) lies in the fact that javaScript itself can be *implemented* in different ways. The most common example of this is the engines (usually written in c++) implemented by different browsers. This can affect what one can and cannot do with the language itself.
+
+Finally, I'll quickly point out that Typescript is actually a *superscript* of javaScript. This is done to help remediate some of the many nuances to the language, but is, in of itself a phenomenon not found in any other language. Additionally - less experienced developers can fall in to some of the pitfalls noted above due to Typescript further obscuring javaScripts prototypal nature.
+
+I would not necessarily say that any of these nuances are *bad*, except perhaps that the language can be implemented in different ways - which can lead to very unexpected behavior. As with most nuances, awareness of them can often allow developers to leverage their properties.
 
 ## Code Review
 
@@ -65,7 +87,7 @@ Request with comments.
 
 see pr review here: [code review](https://github.com/LongStoryMedia/rf-assessment/pull/1)
 
-see how I would refactor here[refactored code](https://github.com/LongStoryMedia/rf-assessment/blob/feature/compute-student-loan-refactor/computeStudentLoan.ts)
+see how I would refactor here: [refactored code](https://github.com/LongStoryMedia/rf-assessment/blob/feature/compute-student-loan-refactor/computeStudentLoan.ts)
 
 ## Coded Data Structures & Algorithms Problem
 
