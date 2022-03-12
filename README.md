@@ -1,3 +1,14 @@
+# Getting started
+
+a makefile is included to more easily verify this assessment. To get set up for this, I recommend running the following commands in order:
+
+```sh
+venv .
+. ./bin/activate
+make install
+```
+this will initialize all dependencies in an isolated environment
+
 # Software Engineer Take Home Exercise
 ### An Evaluation of Software Engineering Habits and Skills for Rightfoot
 
@@ -68,4 +79,6 @@ the selected language. If there are additional assumptions you make based on abs
 information or clarity in the prompt, please declare them. Style, including comments and
 documentation patterns, counts.
 
-[boomerang](boomerang.py)
+*to run, enter `make boomerang` in your terminal*
+
+view code here: [boomerang](boomerang.py)
