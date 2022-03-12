@@ -63,8 +63,9 @@ You may choose what manner you wish to perform the review. You may make comments
 inline in this document or in an online review product, such as a GitHub repository Pull
 Request with comments.
 
-[code review](computeStudentLoan.ts)
-[refactored code](computeStudentLoan.ts)
+see pr review here: [code review](https://github.com/LongStoryMedia/rf-assessment/pull/1)
+
+see how I would refactor here[refactored code](https://github.com/LongStoryMedia/rf-assessment/blob/feature/compute-student-loan-refactor/computeStudentLoan.ts)
 
 ## Coded Data Structures & Algorithms Problem
 
