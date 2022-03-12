@@ -12,6 +12,15 @@ from typing import List, Sequence, Set, Tuple
 
 
 def get_equidistant_stars(origin_star: Tuple[int, int], stars: Set[Tuple[int, int]]) -> List:
+    """gets stars that have at least one other equidistant star to the origin
+
+    Args:
+        origin_star (Tuple[int, int]): 
+        stars (Set[Tuple[int, int]]): 
+
+    Returns:
+        List: list of numbers - each representing a star
+    """
     destinations = []
     distances = []
     unique_distances = {}
