@@ -52,10 +52,11 @@ You may choose what manner you wish to perform the review. You may make comments
 inline in this document or in an online review product, such as a GitHub repository Pull
 Request with comments.
 
-[code review]()
+[code review](computeStudentLoan.ts)
 [refactored code](computeStudentLoan.ts)
 
-Coded Data Structures & Algorithms Problem
+## Coded Data Structures & Algorithms Problem
+
 Code a solution to the following problem, coding for the optimal space and runtime
 complexity. You may select from any of the following languages: TypeScript, Python, Go,
 Java, or C++. You are permitted to submit the code inline in this document, or as a link to
@@ -66,48 +67,5 @@ cases. The function prototype is provided in Python but can be modified as appro
 the selected language. If there are additional assumptions you make based on absence of
 information or clarity in the prompt, please declare them. Style, including comments and
 documentation patterns, counts.
-# Imagine a sky full of stars, represented by a sequence of
-# two-dimensional coordinate points. Defining a "boomerang"
-# as a set of 3 stars where if lines are drawn from 2 stars to
-# the third vertex star, they would be equal length. Given this
-# definition, implement the boomerang_count function, which
-# computes the count of unique boomerangs that may be
-# formed from a provided list of stars.
-def boomerang_count(stars: Sequence[Tuple[int, int]]) -> int:
-pass
-# *********************************************************
-# Example test cases that must pass.
-#
-# Examples are provided with ASCII art showing their layout
-# and the boomerangs listed as the three stars in the
-# boomerang with the vertex star listed in the middle.
-# *********************************************************
-# Simple 3 stars in a row:
-# A--B--C.
-# Boomerangs: ABC
-assert boomerang_count((
-(0, 0),
-(1, 0),
-(2, 0),
-)) == 1
-# Equilateral triangle:
-# A
-# / \
-# B---C
-# Boomerangs: ABC, ACB, CAB
-assert boomerang_count((
-(0, 0),
-(1, math.sqrt(3)),
-(2, 0),
-)) == 3
-# Hub and Spoke:
-# C
-# |
-# B--A--D
-# Boomerangs: BAC, CAD, BAD, BCD
-assert boomerang_count((
-( 0, 0),
-(-1, 0),
-( 0, 1),
-( 1, 0),
-)) == 4
+
+[boomerang](boomerang.py)
